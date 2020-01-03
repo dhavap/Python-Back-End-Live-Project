@@ -1,0 +1,13 @@
+{% include 'base.html' %}
+{% load static %}
+{% block pagetitle %}<h1>History of Space Exploration</h1>{% endblock %}
+{% block content %}
+<br/><br/>
+<div><h3>Space missions in the {{ decade }}</h3></div>
+<div>{{ data|safe }}</div>
+<br>
+<div>Source: <a href="https://en.wikipedia.org/wiki/Timeline_of_Solar_System_exploration">Wikipedia</a></div>
+<br>
+{% include "footer.html" %}
+{% include "navbar.html" %}
+{% endblock %}

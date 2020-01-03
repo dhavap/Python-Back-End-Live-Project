@@ -8,47 +8,12 @@ I have included descriptions of the stories I worked on below, along with screen
 <h4>Web Scraping</h4>
 I was tasked with extracting data from a Wikipedia page on the timeline of space exploration. I created a dropdown list allowing users to select the decade of space exploration they wished to view. I used Beautiful Soup to parse and extract the relecant data from the webpage. I then used Pandas to create a table out of the parsed data. 
 
-*urls.py*
+
 ```
-from django.urls import path
-from . import views
-from django.views.generic import TemplateView
-
-urlpatterns = [
-    path('', views.space_exploration, name='explore'),
-    path('<str:decade>/result/', views.result, name='result'),
-]
-```
-
-*views.py*
-```
-from django.shortcuts import render
-from django.http import HttpResponse
-from django.http import HttpResponseRedirect
-from django import forms
-from django.views import View
-# from .forms import decadeForm
-# from .models import chooseDecade
-from bs4 import BeautifulSoup
-import requests
-import pandas as pd
-
-DECADE_OPTIONS = [
-    '1950s',
-    '1960s',
-    '1970s',
-    '1980s',
-    '1990s',
-    '2000s',
-    '2010s',
-    'Planned_or_scheduled'
-]
-
 #============== Rendering page with decade options for user to choose from
 def space_exploration(request):
     decades = {'decades' : DECADE_OPTIONS}
     return render(request, 'explorationTimeline/space_exploration.html', decades)
-
 
 #============== Using BeautifulSoup to get tables from Wikipage based on user selected decade
 def result(request, decade):  #pass the user selected variable 'decade' into the function

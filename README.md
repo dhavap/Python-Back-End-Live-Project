@@ -1,13 +1,12 @@
 # Live-Projects
 <h2>Introduction</h2>
-As a student of The Tech Academy, I worked on Python live projects for 2 2-week sprints. I got to experience working on different projects at varying stages of completion in a team of fellow software developers. This repository provides an overview of the stories I worked on. I got to experience starting up a new project as well as adding to and amending code in an existing, ongoing project. I worked on both front end and back end stories using the Django framework. 
+As a student of The Tech Academy, I worked on Python live project for a 2-week sprint. I got to experience working on an ongoing project in a team of fellow software developers. This repository provides an overview of the stories I worked on. I used the Django framework for this project. 
 
-I have included descriptions of the stories I worked on below, along with screenshots of my code snippets from the project.
+I have included descriptions of the stories I worked on below, along with screenshots of my code snippets from the project.I have also included some files containing the full code I created for this project in this repository.
 
-<h2>Back End Stories</h2>
 <h4>Web Scraping</h4>
-I was tasked with extracting data from a Wikipedia page on the timeline of space exploration. I created a dropdown list allowing users to select the decade of space exploration they wished to view. I used Beautiful Soup to parse and extract the relecant data from the webpage. I then used Pandas to create a table out of the parsed data. 
-
+I was tasked with extracting data from a Wikipedia page on the timeline of space exploration. I created a dropdown list allowing users to select the decade of space exploration they wished to view. I used Beautiful Soup to parse and extract the relecant data from the webpage. I then used Pandas to create a table out of the parsed data. I then had this table display on the result page. 
+<br>
 
 ```
 #============== Rendering page with decade options for user to choose from

@@ -1,0 +1,22 @@
+{% include 'base.html' %}
+{% load static %}
+{% block pagetitle %}<h1>History of Space Exploration</h1>{% endblock %}
+{% block content %}
+
+<br/><br/>
+<div>
+    <form method="post" action="">
+        {% csrf_token %}
+        <label>Choose Decade:</label>
+        <select id= "decade-dropdown" type="text" name="decade" onChange="location.href = this.value">
+            <option value=""> --- Select Decade --- </option>
+        {% for decade in decades %}
+            <option value="{{ decade }}/result">{{ decade }}</option>
+        {% endfor %}
+        </select>
+    </form>
+</div>
+
+{% include "footer.html" %}
+{% include "navbar.html" %}
+{% endblock %}

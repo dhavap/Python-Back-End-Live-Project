@@ -1,7 +1,7 @@
 # Live-Projects
 <h2>Introduction</h2>
 As a student of The Tech Academy, I worked on Python live project for a 2-week sprint. I got to experience working on an ongoing project in a team of fellow software developers. This repository provides an overview of the stories I worked on. I used the Django framework for this project. 
-
+<br>
 I have included descriptions of the stories I worked on below, along with screenshots of my code snippets from the project.I have also included some files containing the full code I created for this project in this repository.
 
 <h4>Web Scraping</h4>

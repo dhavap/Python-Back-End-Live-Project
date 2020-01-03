@@ -1,2 +1,2 @@
 # Live-Projects
-For a total of 2 months, I have worked on 4 2-week sprints. This repository provides an overview of the stories I worked on.
+As a student of The Tech Academy, I worked on live projects for the final 2 months of my course. I got to experience working on different projects at varying stages of completion. 

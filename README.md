@@ -7,7 +7,7 @@ I have included descriptions of the stories I worked on below, along with screen
 ## Tech used
 For this story, I used Python, Django, and Beautiful Soup. Azure Devops was used to manage the project. The IDE used was Visual Studio Code.
 
-##Features
+## Features
 ### Web Scraping
 I was tasked with extracting data from a Wikipedia page on the timeline of space exploration. I created a dropdown list allowing users to select the decade of space exploration they wished to view. Upon receiving user input, I then used Beautiful Soup to parse and extract the relevant data from the webpage. This was a new technology I had to learn to complete this story. I then used Pandas to create a table out of the parsed data and rendered this table display on the result page. 
 
